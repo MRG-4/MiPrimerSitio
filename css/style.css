@@ -1,0 +1,104 @@
+/* 
+Si quiero llamara a mas de una
+etiqueta las separo por coma.
+etiqueta{ 
+    propiedad:valor;
+} 
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+header,
+nav,
+footer {
+    background-color: #ff0000;
+}
+header h1 {
+    font-family: "Tagesschrift", system-ui;
+    text-align: center;
+    color: #000000;
+    font-size: 56px;
+    padding-top: 16px;
+}
+ul {
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    font-size: 24px;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #210404;
+}
+nav ul li a:hover {
+    color: #a60000;
+    text-decoration: underline;
+}
+main {
+    text-align: left;
+    min-height: 521px;
+}
+main section {
+    margin: 10px 0;
+}
+main section article {
+    width: 600px;
+    margin: 0 auto;
+}
+#enlace:hover {
+    border-radius: 20px;
+    background-color: rgba(251, 127, 127, 0.781);
+}
+#crecimiento:hover{
+    transform: scale(1.1);
+    transform: rotate(45deg);
+}
+#animacion:hover{
+    transform: scale(1.1);
+    transform: rotate(360deg);
+    color:red;
+}
+#animacion{
+    /* transition: propiedad tiempo(milisegundos) aceleración; */
+    transition: transform 1000ms ease;
+}
+main section article div {
+    display: inline-block;
+    /*Inline a los elementos. Mantiene las propiedad es width y heigh*/
+    margin: 0 auto;
+}
+main section article .contenido h2 {
+    font-family: "Oswald", sans-serif;
+    text-align: middle;
+}
+main section article .contenido p {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    width: 300px;
+    vertical-align: top;
+}
+.carrusel-mio{
+    max-width: 90%;
+    margin: 10px auto;
+    max-height: 900px;
+}
+.carousel-inner img{
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    margin: 10px auto;
+    object-fit: cover;
+    display:block;
+}
+footer {
+    position: relative;
+    height: 100px;
+    bottom: 0px;
+    width: 100%;
+    color: #000000;
+    background-color: #ff0000;
+}
